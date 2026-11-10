@@ -21,13 +21,17 @@ export function GallerySeating() {
       {[-0.68, 0.68].map(x => (
         <group key={x}>
           <mesh geometry={cushion} position={[x, 0.59, 0.05]} scale={[1.3, 0.25, 1.01]}>
-            <meshStandardMaterial color="#617063" roughness={0.96} bumpMap={surfaceTexture("fabric")} bumpScale={0.008} />
+            <meshStandardMaterial color="#826b77" roughness={0.96} bumpMap={surfaceTexture("fabric")} bumpScale={0.008} />
           </mesh>
           <mesh geometry={cushion} position={[x, 1.02, -0.35]} scale={[1.3, 0.65, 0.2]} rotation={[-0.08, 0, 0]}>
             <meshStandardMaterial color="#617063" roughness={0.96} bumpMap={surfaceTexture("fabric")} bumpScale={0.008} />
           </mesh>
         </group>
       ))}
+      {/* Inlaid brass joinery and a contrasting upholstered seat give the benches
+          the visual weight of bespoke gallery furniture. */}
+      <Box position={[0, 0.49, 0.61]} size={[2.76, 0.035, 0.025]} color="#c8a471" metalness={0.65} />
+      <Box position={[0, 1.3, -0.39]} size={[2.7, 0.035, 0.035]} color="#c8a471" metalness={0.65} />
       {[-1.4, 1.4].map(x => <Box key={x} position={[x, 0.75, 0]} size={[0.14, 0.56, 1.2]} color="#483126" surface="wood" />)}
     </group>
   ))}</>;
