@@ -1,4 +1,5 @@
 import { RoyalCorridorShell } from "./RoyalCorridorShell";
+import { RoomArchitectureDetails } from "./RoomArchitectureDetails";
 import { useEffect, useMemo } from "react";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader, type Texture } from "three";
@@ -71,6 +72,7 @@ export function RoomShell({
           />
         )}
       </RigidBody>
+      {visible && <RoomArchitectureDetails room={room} />}
       {visible && classic && <ClassicInteriors room={room} />}
       {visible && cinema && (
         <group position={[0, 0, center]}>
