@@ -242,30 +242,35 @@ for (const [x, z] of cinemaSeats) {
     {
       position: [x - 0.13, 0.55, z],
       size: [1.04, 0.32, 1.17],
-      color: "#9b465b",
+      color: "#71394d",
     },
     {
       position: [x + 0.42, 0.99, z],
       size: [0.34, 1.2, 1.17],
-      color: "#773247",
+      color: "#5a283d",
       tilt: -0.17,
     },
     {
       position: [x + 0.35, 1.47, z],
       size: [0.39, 0.33, 0.99],
-      color: "#914458",
+      color: "#7e4154",
       tilt: -0.17,
     },
     {
       position: [x - 0.04, 0.81, z - 0.62],
       size: [1.07, 0.23, 0.18],
-      color: "#692b3f",
+      color: "#432233",
     },
     {
       position: [x - 0.04, 0.81, z + 0.62],
       size: [1.07, 0.23, 0.18],
       color: "#692b3f",
     },
+  );
+  // Small metallic seams articulate the chairs without adding per-seat meshes.
+  bases.push(
+    { position: [x - 0.62, 0.48, z - 0.59], size: [0.04, 0.04, 0.08], color: "#c69b66" },
+    { position: [x - 0.62, 0.48, z + 0.59], size: [0.04, 0.04, 0.08], color: "#c69b66" },
   );
 }
 
