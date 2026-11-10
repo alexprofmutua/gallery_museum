@@ -80,7 +80,6 @@ function makePieces(room: MuseumRoom) {
   if (room.id === "entrance") {
     // A sequence of grand coffered ceiling bays and brass dividers.
     for (const z of [12.2, 15.3, 18.4, 21.5]) {
-      add("stone", [0, h - 0.13, z], [9.5, 0.12, 2.45], stone);
       for (const x of [-4.8, 4.8]) {
         add("metal", [x, h - 0.22, z], [0.075, 0.07, 2.32], metal);
       }
