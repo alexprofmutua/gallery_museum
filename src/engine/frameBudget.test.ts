@@ -33,4 +33,18 @@ describe("adaptive render budget", () => {
       fast: 0,
     });
   });
+
+  it("ignores invalid or missing timing measurements", () => {
+    expect(budgetDecision(2, 4, Number.NaN, 1.2, 0.8, 1.5)).toEqual({
+      dpr: 1.2, slow: 0, fast: 0,
+    });
+    expect(budgetDecision(2, 4, Infinity, 1.2, 0.8, 1.5).dpr).toBe(1.2);
+    expect(budgetDecision(2, 4, 0, 1.2, 0.8, 1.5).dpr).toBe(1.2);
+  });
+
+  it("clamps an out-of-range DPR without overshooting quality bounds", () => {
+    expect(budgetDecision(0, 0, 20, 2, 0.8, 1.5).dpr).toBe(1.5);
+    expect(budgetDecision(0, 0, 20, 0.5, 0.8, 1.5).dpr).toBe(0.8);
+  });
+
 });
