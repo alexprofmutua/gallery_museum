@@ -68,7 +68,7 @@ function makePieces(room: MuseumRoom) {
   const h = room.height;
   // Perimeter cornice: a distinctive layered silhouette in each room.
   // These are near the side walls and above the visitor's sightline.
-  for (const side of [-1, 1]) {
+  for (const side of room.id === "forever" ? [] : [-1, 1]) {
     const x = side * (w - 0.12);
     add("stone", [x, h - 0.34, center], [0.34, 0.23, depth - 0.25], stone);
     add("metal", [x - side * 0.03, h - 0.49, center], [0.16, 0.045, depth - 0.35], metal);
