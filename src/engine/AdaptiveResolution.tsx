@@ -47,12 +47,13 @@ export function AdaptiveResolution({ onDprChange }: { onDprChange: (dpr: number)
 
   useFrame((_, delta) => {
     const sample = samples.current;
-    if (document.hidden || delta > 0.25) {
+    if (document.hidden) return;
+    if (delta > 0.25) {
+      // A long frame is usually an asset load or browser interruption.
+      // Discard only this measurement window: restarting warmup here
+      // could indefinitely disable adaptation during repeated hitches.
       sample.elapsed = 0;
       sample.frames = 0;
-      sample.slow = 0;
-      sample.fast = 0;
-      sample.warmup = WARMUP_SECONDS;
       return;
     }
 
