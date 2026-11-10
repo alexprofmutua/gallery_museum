@@ -1682,3 +1682,125 @@ button:focus-visible, a:focus-visible { outline: 3px solid #b49256; outline-offs
 main[data-screening="true"] .museum-navigation { opacity: 0; pointer-events: none; }
 @media (pointer: coarse) { .film-hud .film-control { min-height: 44px; } }
 @media (prefers-reduced-motion: reduce) { .projection-dialog.film-hud { transition: none; } }
+
+
+/* Museum interface refinement: overlay-only styling, no extra WebGL work. */
+:root {
+  --museum-glass: rgba(244, 238, 226, 0.88);
+  --museum-glass-border: rgba(144, 119, 77, 0.35);
+  --museum-elevation: 0 18px 60px rgba(28, 24, 19, 0.2);
+}
+.icon-button,
+.help-button,
+.interact,
+.room-route,
+.dialog,
+.portrait-panel {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.icon-button,
+.help-button {
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+.icon-button:hover,
+.help-button:hover {
+  border-color: var(--gold);
+  transform: translateY(-1px);
+}
+.icon-button:active,
+.help-button:active,
+.primary:active {
+  transform: translateY(1px);
+}
+.dialog {
+  border-radius: 14px;
+  border-color: var(--museum-glass-border);
+  box-shadow: 0 24px 85px rgba(25, 21, 17, 0.32);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.dialog-inner {
+  min-width: 0;
+}
+.dialog h2 {
+  text-wrap: balance;
+}
+.dialog p {
+  overflow-wrap: anywhere;
+}
+.dialog::backdrop {
+  background: rgba(18, 17, 20, 0.68);
+}
+.memory-image img {
+  max-height: min(70dvh, 740px);
+  object-fit: contain;
+}
+.memory-copy {
+  min-width: 0;
+}
+.interact {
+  border-radius: 10px;
+  background: var(--museum-glass);
+  border-color: var(--museum-glass-border);
+  box-shadow: var(--museum-elevation);
+  max-width: calc(100vw - 32px);
+  white-space: normal;
+}
+.room-route {
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(26, 23, 18, 0.1);
+}
+.primary {
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+:where(button, a, input, select, textarea):focus-visible {
+  outline: 3px solid #a67b37;
+  outline-offset: 3px;
+}
+@media (max-width: 800px) {
+  .dialog {
+    max-height: min(90dvh, 900px);
+  }
+  .dialog-inner {
+    padding: 42px 24px 28px;
+  }
+  .memory-dialog .dialog-inner {
+    padding: 0;
+  }
+  .memory-image {
+    padding: 28px;
+  }
+  .memory-copy {
+    padding: 30px 24px;
+  }
+  .room-route {
+    max-width: calc(100vw - 44px);
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 16px;
+  }
+  .room-tag {
+    left: 16px;
+  }
+  .explore-footer {
+    padding: 16px;
+  }
+  .dialog {
+    width: calc(100% - 20px);
+  }
+  .interact {
+    bottom: 27%;
+    padding: 10px 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .icon-button,
+  .help-button,
+  .primary {
+    transition: none;
+    transform: none !important;
+  }
+}
