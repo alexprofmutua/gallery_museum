@@ -1,0 +1,295 @@
+/*
+ * Five-room visitor interface.
+ * All effects live in the DOM overlay; none adds draw calls, render passes,
+ * animation loops, or texture allocations to the WebGL scene.
+ */
+main[data-compact-ui] {
+  --ui-accent: #d9b77c;
+  --ui-ink: #fff5e6;
+  --ui-surface: rgba(29, 27, 25, 0.93);
+  --ui-edge: rgba(226, 196, 149, 0.34);
+}
+main[data-room="entrance"] {
+  --ui-accent: #f0ca91;
+  --ui-surface: rgba(40, 30, 22, 0.94);
+  --ui-edge: rgba(231, 187, 119, 0.42);
+}
+main[data-room="gallery"] {
+  --ui-accent: #e7cba2;
+  --ui-surface: rgba(40, 34, 27, 0.94);
+  --ui-edge: rgba(222, 195, 150, 0.4);
+}
+main[data-room="corridor"] {
+  --ui-accent: #e0c5ff;
+  --ui-surface: rgba(30, 21, 46, 0.95);
+  --ui-edge: rgba(192, 154, 233, 0.42);
+}
+main[data-room="cinema"] {
+  --ui-accent: #f0c69d;
+  --ui-surface: rgba(25, 17, 33, 0.96);
+  --ui-edge: rgba(206, 157, 122, 0.42);
+}
+main[data-room="forever"] {
+  --ui-accent: #f1d3a5;
+  --ui-surface: rgba(32, 29, 43, 0.95);
+  --ui-edge: rgba(215, 184, 163, 0.44);
+}
+
+/* Shared visual language: a quiet museum plaque, not a game HUD. */
+main[data-compact-ui] .brand,
+main[data-compact-ui] .museum-navigation,
+main[data-compact-ui] .interact,
+main[data-compact-ui] .help-button {
+  border: 1px solid var(--ui-edge);
+  box-shadow: 0 10px 28px rgba(12, 10, 13, 0.19);
+}
+main[data-compact-ui] .brand {
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  border-radius: 14px;
+  padding: 8px 14px 8px 9px;
+}
+main[data-compact-ui] .brand-mark {
+  border-color: var(--ui-accent);
+  color: var(--ui-accent);
+}
+main[data-compact-ui] .brand-copy small {
+  color: var(--ui-accent);
+  opacity: 0.95;
+  letter-spacing: 0.16em;
+}
+main[data-compact-ui] .brand-copy strong {
+  color: var(--ui-ink);
+  font: 400 17px/1.25 "Italiana", Georgia, serif;
+  letter-spacing: 0.015em;
+}
+main[data-compact-ui] .museum-navigation {
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  border-radius: 12px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+main[data-compact-ui] .museum-navigation > svg {
+  color: var(--ui-accent);
+}
+main[data-compact-ui] .route-dots i {
+  background: rgba(255, 246, 229, 0.3);
+}
+main[data-compact-ui] .route-dots .is-current {
+  background: var(--ui-accent);
+  box-shadow: 0 0 0 4px rgba(233, 199, 155, 0.16);
+}
+main[data-compact-ui] .interact {
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  border-radius: 13px;
+  padding: 12px 18px;
+  max-width: min(400px, calc(100vw - 30px));
+}
+main[data-compact-ui] .interact .key,
+main[data-compact-ui] .interact kbd {
+  color: var(--ui-accent);
+  border-color: var(--ui-edge);
+}
+main[data-compact-ui] .portrait-trigger strong,
+main[data-compact-ui] .letter-trigger svg {
+  color: var(--ui-accent);
+}
+main[data-compact-ui] .help-button {
+  background: var(--ui-surface);
+  color: var(--ui-ink);
+  border-radius: 12px;
+}
+main[data-compact-ui] .help-button svg {
+  color: var(--ui-accent);
+}
+main[data-compact-ui] .walk-status {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-edge);
+  border-radius: 10px;
+  color: var(--ui-ink);
+  padding: 10px 12px;
+}
+main[data-compact-ui] .walk-status svg {
+  color: var(--ui-accent);
+}
+main[data-compact-ui] .explore-footer {
+  background: linear-gradient(transparent, rgba(15, 12, 15, 0.56));
+  color: var(--ui-ink);
+}
+main[data-compact-ui] .desktop-hint span {
+  color: rgba(255, 245, 228, 0.82);
+}
+main[data-compact-ui] .header-right .icon-button {
+  border-radius: 12px;
+  border: 1px solid var(--ui-edge);
+  background: var(--ui-surface);
+  color: var(--ui-accent);
+}
+main[data-compact-ui] :is(.museum-navigation, .interact, .help-button, .icon-button):focus-visible {
+  outline: 3px solid var(--ui-accent);
+  outline-offset: 3px;
+}
+@media (hover: hover) {
+  main[data-compact-ui] :is(.museum-navigation, .interact, .help-button):hover {
+    border-color: var(--ui-accent);
+    background: var(--ui-surface);
+  }
+}
+
+/* Entrance: the welcome invitation is the hero; the room remains visible. */
+main[data-room="entrance"] .welcome-copy {
+  border-color: rgba(231, 187, 119, 0.6);
+  border-radius: 18px;
+  background: rgba(35, 28, 23, 0.96);
+}
+main[data-room="entrance"] .welcome-copy h1 em {
+  color: #f0ca91;
+}
+
+/* Gallery: framed photographs remain the visual focus. */
+main[data-room="gallery"] .interact {
+  border-left: 3px solid var(--ui-accent);
+}
+
+/* Corridor: a violet invitation to activate, never autoplay, a portrait. */
+main[data-room="corridor"] .portrait-trigger {
+  border-left: 3px solid var(--ui-accent);
+}
+main[data-room="corridor"] .portrait-trigger strong {
+  font: 400 19px/1.3 "Italiana", Georgia, serif;
+}
+
+/* Cinema: keep overlays quiet during a screening. */
+main[data-room="cinema"] .interact {
+  border-left: 3px solid var(--ui-accent);
+}
+main[data-screening="true"] :is(.museum-navigation, .header-right) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Forever Room: a subtle gold edge, not additional scene lighting. */
+main[data-room="forever"] .letter-trigger {
+  border-left: 3px solid var(--ui-accent);
+}
+.final-letter {
+  border-color: #c5a67b;
+  background: #f7f0e4;
+}
+.final-letter .dialog-inner {
+  padding: clamp(30px, 5vw, 60px);
+}
+.final-letter h2 {
+  color: #48372f;
+  font-size: clamp(36px, 5vw, 56px);
+}
+.final-letter p {
+  font-size: 15px;
+  line-height: 1.9;
+}
+.final-letter .letter-signoff {
+  margin-top: 28px;
+  color: #86613e;
+}
+
+/* Consistent media dialogs without extra WebGL or backdrop effects. */
+.memory-dialog,
+.cinema-dialog,
+.museum-map-dialog {
+  border-radius: 16px;
+}
+.memory-dialog .memory-copy h2 {
+  line-height: 1.15;
+}
+.portrait-panel {
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(16, 12, 22, 0.25);
+}
+.portrait-panel > strong {
+  font: 400 19px/1.3 "Italiana", Georgia, serif;
+}
+.cinema-films button {
+  border-radius: 9px;
+}
+.cinema-films button:focus-visible,
+.portrait-actions button:focus-visible {
+  outline: 3px solid #e8c18b;
+  outline-offset: 2px;
+}
+.projection-dialog {
+  border-radius: 14px;
+}
+
+/* Responsive, safe-area-aware positioning for the five-room HUD. */
+@media (max-width: 800px) {
+  main[data-compact-ui] .header {
+    padding: max(12px, env(safe-area-inset-top)) 16px 0;
+  }
+  main[data-compact-ui] .brand {
+    max-width: min(62vw, 300px);
+  }
+  main[data-compact-ui] .museum-navigation {
+    right: 74px;
+    top: calc(max(12px, env(safe-area-inset-top)) + 2px);
+    padding: 0 10px;
+    gap: 9px;
+  }
+  main[data-compact-ui] .route-dots {
+    gap: 5px;
+  }
+  main[data-compact-ui] .route-dots i {
+    width: 5px;
+    height: 5px;
+  }
+  main[data-compact-ui] .explore-footer {
+    padding: 14px 16px max(14px, env(safe-area-inset-bottom));
+  }
+  main[data-compact-ui] .walk-status {
+    font-size: 11px;
+  }
+}
+@media (max-width: 480px) {
+  main[data-compact-ui] .brand {
+    max-width: 54vw;
+    padding: 6px 9px;
+    gap: 7px;
+  }
+  main[data-compact-ui] .brand-copy strong {
+    font-size: 13px;
+  }
+  main[data-compact-ui] .brand-copy small {
+    font-size: 7px;
+  }
+  main[data-compact-ui] .museum-navigation {
+    right: 69px;
+    padding: 0 8px;
+    gap: 7px;
+  }
+  main[data-compact-ui] .route-dots {
+    display: none;
+  }
+  main[data-compact-ui] .walk-status {
+    display: none;
+  }
+  main[data-compact-ui] .help-button {
+    padding: 10px 12px;
+  }
+  .final-letter .dialog-inner {
+    padding: 48px 22px 24px;
+  }
+}
+@media (max-height: 500px) {
+  main[data-compact-ui] .explore-footer {
+    padding-block: 8px;
+  }
+  main[data-compact-ui] .desktop-hint {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  main[data-compact-ui] .desktop-hint {
+    transition: none;
+  }
+}
