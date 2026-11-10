@@ -3,9 +3,9 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useMuseum } from "../stores/museum";
 import { budgetDecision } from "./frameBudget";
 
-export function AdaptiveResolution() {
+export function AdaptiveResolution({ onDprChange }: { onDprChange: (dpr: number) => void }) {
   const graphics = useMuseum(state => state.graphics);
-  const { gl, setDpr } = useThree();
+  const { gl } = useThree();
   const samples = useRef({ elapsed: 0, frames: 0, warmup: 6, slow: 0, fast: 0 });
   useEffect(() => {
     samples.current = { elapsed: 0, frames: 0, warmup: 6, slow: 0, fast: 0 };
@@ -24,7 +24,7 @@ export function AdaptiveResolution() {
     const min = Math.min(max, graphics === "high" ? 1 : 0.8);
     const result = budgetDecision(sample.slow, sample.fast, sample.elapsed * 1000 / sample.frames,
       gl.getPixelRatio(), min, max);
-    if (result.dpr !== gl.getPixelRatio()) setDpr(result.dpr);
+    if (result.dpr !== gl.getPixelRatio()) onDprChange(result.dpr);
     Object.assign(sample, { slow: result.slow, fast: result.fast, elapsed: 0, frames: 0 });
   });
   return null;

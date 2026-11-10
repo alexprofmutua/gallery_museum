@@ -1,7 +1,8 @@
 import { WarmShaders } from "../../engine/WarmShaders";
 import { AdaptiveResolution } from "../../engine/AdaptiveResolution";
 import { RenderEnvironment } from "../../engine/RenderEnvironment";
-import { Suspense } from "react";
+import { Suspense, useLayoutEffect, useState } from "react";
+import { RenderContinuity } from "../../engine/RenderContinuity";
 import type { RefObject } from "react";
 import type { CharacterId } from "../../content/characters";
 import type { VisitorPose } from "../../private/useSharedVisit";
@@ -22,6 +23,12 @@ export function World({
   guestCharacter: CharacterId;
 }) {
   const graphics = useMuseum((state) => state.graphics);
+  // Canvas configuration and adaptive quality must share a single DPR value.
+  // Otherwise any parent update silently resets an adaptive reduction to max.
+  const [dpr, setDpr] = useState(() => Math.min(window.devicePixelRatio, graphics === "high" ? 1.5 : 1));
+  useLayoutEffect(() => {
+    setDpr(Math.min(window.devicePixelRatio, graphics === "high" ? 1.5 : 1));
+  }, [graphics]);
   return (
     <Canvas
       fallback={
@@ -36,9 +43,7 @@ export function World({
         </div>
       }
       shadows
-      dpr={
-        graphics === "high" ? [1, 1.5] : [0.8, 1]
-      }
+      dpr={dpr}
       camera={{ position: [0, 1.65, 20], fov: 57, near: 0.1, far: 100 }}
       gl={{ antialias: true, powerPreference: "high-performance" }}
       onCreated={({ gl }) => {
@@ -53,7 +58,8 @@ export function World({
       <color attach="background" args={["#e4dccb"]} />
       <fog attach="fog" args={["#e4dccb", 65, 115]} />
       <RenderEnvironment />
-      <AdaptiveResolution />
+      <AdaptiveResolution onDprChange={setDpr} />
+      <RenderContinuity />
       <Suspense
         fallback={
           <Html center>
