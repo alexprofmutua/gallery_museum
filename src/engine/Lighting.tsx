@@ -66,6 +66,9 @@ const localLight = {
 export function Lighting() {
   const room = useMuseum((state) => state.currentRoom);
   const graphics = useMuseum((state) => state.graphics);
+  // Snap the moving shadow volume to shadow-map texels to reduce shimmer.
+  // The directional shadow camera spans 20 world units horizontally.
+  const shadowTexel = 20 / (graphics === "high" ? 2048 : 1024);
   const shadowTarget = useMemo(() => new Object3D(), []);
   // Broad, fixed picture lights wash the walls from above. Only the current
   // room's fittings are mounted, keeping the light count bounded.
@@ -162,7 +165,7 @@ export function Lighting() {
     if (sun.current) {
       // A fixed light direction with a snapped local shadow volume follows the
       // visitor, so one small map covers long rooms without swimming shadows.
-      const z = Math.round(camera.position.z * 4) / 4;
+      const z = Math.round(camera.position.z / shadowTexel) * shadowTexel;
       const height = roomAt(camera.position.z).height;
       shadowTarget.position.set(0, 0, z);
       shadowTarget.updateMatrixWorld();
