@@ -1,0 +1,34 @@
+{
+  "film": {
+    "title": "A Few Quiet Moments",
+    "source": "/media/sample-film.mp4",
+    "captions": "/media/sample-film.vtt",
+    "poster": "/media/sample-film-poster.jpg",
+    "description": "A short sample film in three scenes. A gold sun rises over the hills, warm lights glow across a lakeshore, and a violet sky gives way to stars."
+  },
+  "music": "/media/sample-museum-music.mp3",
+  "letter": {
+    "title": "For all the days still to come",
+    "paragraphs": [
+      "A museum makes room for the things we want to keep. If I could leave one more thing here, it would be an ordinary day with you. The kind we would never think to take a picture of.",
+      "I hope the rooms keep filling up."
+    ],
+    "dedication": "With love, always."
+  },
+  "additionalFilms": [
+    {
+      "title": "Lakeside Lights",
+      "source": "/media/lakeside-lights.mp4",
+      "captions": "/media/lakeside-lights.vtt",
+      "poster": "/media/lakeside-lights.jpg",
+      "description": "An excerpt from A Few Quiet Moments. Warm lights begin to glow across a quiet lakeshore."
+    },
+    {
+      "title": "A Sky Full of Stars",
+      "source": "/media/sky-full-of-stars.mp4",
+      "captions": "/media/sky-full-of-stars.vtt",
+      "poster": "/media/sky-full-of-stars.jpg",
+      "description": "An excerpt from A Few Quiet Moments. The last light fades into a violet sky full of stars."
+    }
+  ]
+}

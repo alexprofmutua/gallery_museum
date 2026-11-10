@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env*
+!.env.example
+*.tsbuildinfo
+test-results/
+playwright-report/
+/.local-museum/
+
+# Private/generated review media and local archives
+/docs/screenshots/
+*.zip
+*.blend
+*.blend1
+__pycache__/
+*.pyc
+.DS_Store

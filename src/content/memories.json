@@ -1,0 +1,602 @@
+[
+  {
+    "id": "first-memory",
+    "title": "A moment to keep",
+    "caption": "Your photograph, your story.",
+    "story": "This space is waiting for a memory only you can tell. Replace this sample artwork with your photograph, give it a title, and write what made that moment yours.\n\nAll content in this prototype is a placeholder. No names, dates, or relationship details have been supplied.",
+    "alt": "People with umbrellas on a broad Paris street. Gustave Caillebotte.",
+    "image": "/images/memories/art-20684.webp",
+    "position": [
+      -3.7,
+      2.55,
+      -9.7
+    ],
+    "rotationY": 0,
+    "displayOrder": 1,
+    "frame": {
+      "width": 3.48,
+      "height": 2.72
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-02",
+    "title": "Memory 02",
+    "caption": "Placeholder 02. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 02, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a small sailboat among curved bands of water.",
+    "image": "/images/memories/memory-02.svg",
+    "position": [
+      -6.94,
+      1.9,
+      -6.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 2,
+    "frame": {
+      "width": 1.45,
+      "height": 1.45
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-03",
+    "title": "Memory 03",
+    "caption": "Placeholder 03. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 03, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a crescent moon above a dark horizon.",
+    "image": "/images/memories/memory-03.svg",
+    "position": [
+      -6.94,
+      1.9,
+      -5.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 3,
+    "frame": {
+      "width": 1.45,
+      "height": 1.45
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-04",
+    "title": "Memory 04",
+    "caption": "Placeholder 04. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 04, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "A woman washes a child’s feet in a white basin. Mary Cassatt.",
+    "image": "/images/memories/art-111442.webp",
+    "position": [
+      -6.94,
+      1.84,
+      -2.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 4,
+    "frame": {
+      "width": 1.42,
+      "height": 1.58
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-05",
+    "title": "Memory 05",
+    "caption": "Placeholder 05. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 05, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of arches beside a moonlit courtyard.",
+    "image": "/images/memories/memory-05.svg",
+    "position": [
+      -6.94,
+      2.01,
+      -1.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 5,
+    "frame": {
+      "width": 1.12,
+      "height": 1.16
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-06",
+    "title": "Memory 06",
+    "caption": "Placeholder 06. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 06, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated still life of a vase holding pale branches and flowers.",
+    "image": "/images/memories/memory-06.svg",
+    "position": [
+      -6.94,
+      1.92,
+      1.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 6,
+    "frame": {
+      "width": 1.48,
+      "height": 1.34
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-07",
+    "title": "Memory 07",
+    "caption": "Placeholder 07. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 07, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Fishing boats and coastal cliffs at Étretat. Claude Monet.",
+    "image": "/images/memories/art-81540.webp",
+    "position": [
+      -6.94,
+      2.06,
+      2.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 7,
+    "frame": {
+      "width": 1.24,
+      "height": 1.52
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-08",
+    "title": "Memory 08",
+    "caption": "Placeholder 08. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 08, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a crescent moon above a dark horizon.",
+    "image": "/images/memories/memory-08.svg",
+    "position": [
+      -6.94,
+      1.84,
+      5.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 8,
+    "frame": {
+      "width": 1.42,
+      "height": 1.58
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-09",
+    "title": "Memory 09",
+    "caption": "Placeholder 09. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 09, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of glowing windows above a quiet street at dusk.",
+    "image": "/images/memories/memory-09.svg",
+    "position": [
+      -6.94,
+      2.01,
+      6.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 9,
+    "frame": {
+      "width": 1.12,
+      "height": 1.16
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-10",
+    "title": "Memory 10",
+    "caption": "Placeholder 10. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 10, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "A bedroom with a wooden bed, chairs and pale blue walls. Vincent van Gogh.",
+    "image": "/images/memories/art-28560.webp",
+    "position": [
+      6.94,
+      1.92,
+      -6.85
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 10,
+    "frame": {
+      "width": 1.48,
+      "height": 1.34
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-11",
+    "title": "Memory 11",
+    "caption": "Placeholder 11. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 11, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated still life of a vase holding pale branches and flowers.",
+    "image": "/images/memories/memory-11.svg",
+    "position": [
+      6.94,
+      2.06,
+      -5.15
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 11,
+    "frame": {
+      "width": 1.24,
+      "height": 1.52
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-12",
+    "title": "Memory 12",
+    "caption": "Placeholder 12. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 12, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Pink water lilies on a blue-green pond. Claude Monet.",
+    "image": "/images/memories/art-16568.webp",
+    "position": [
+      6.94,
+      1.84,
+      -2.85
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 12,
+    "frame": {
+      "width": 1.42,
+      "height": 1.58
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-13",
+    "title": "Memory 13",
+    "caption": "Placeholder 13. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 13, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a crescent moon above a dark horizon.",
+    "image": "/images/memories/memory-13.svg",
+    "position": [
+      6.94,
+      2.01,
+      -1.15
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 13,
+    "frame": {
+      "width": 1.12,
+      "height": 1.16
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-14",
+    "title": "Memory 14",
+    "caption": "Placeholder 14. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 14, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of glowing windows above a quiet street at dusk.",
+    "image": "/images/memories/memory-14.svg",
+    "position": [
+      6.94,
+      1.92,
+      1.15
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 14,
+    "frame": {
+      "width": 1.48,
+      "height": 1.34
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-15",
+    "title": "Memory 15",
+    "caption": "Placeholder 15. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 15, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Two figures on a grassy cliff above blue water. Claude Monet.",
+    "image": "/images/memories/art-14620.webp",
+    "position": [
+      4.05,
+      2.65,
+      -9.69
+    ],
+    "rotationY": 0,
+    "displayOrder": 15,
+    "frame": {
+      "width": 2.82,
+      "height": 2.34
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-16",
+    "title": "Memory 16",
+    "caption": "Placeholder 16. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 16, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Figures relax by a river in a sunlit park. Georges Seurat.",
+    "image": "/images/memories/art-27992.webp",
+    "position": [
+      3.9,
+      2.65,
+      9.65
+    ],
+    "rotationY": 3.141592653589793,
+    "displayOrder": 16,
+    "frame": {
+      "width": 3.55,
+      "height": 2.55
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-17",
+    "title": "Memory 17",
+    "caption": "Placeholder 17. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 17, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "A blue wave curls over boats with Mount Fuji in the distance. Katsushika Hokusai.",
+    "image": "/images/memories/art-24645.webp",
+    "position": [
+      6.94,
+      2.65,
+      6
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 17,
+    "frame": {
+      "width": 2.8,
+      "height": 2.72
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-18",
+    "title": "Memory 18",
+    "caption": "Placeholder 18. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 18, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a crescent moon above a dark horizon.",
+    "image": "/images/memories/memory-18.svg",
+    "position": [
+      -6.94,
+      3.83,
+      -6.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 18,
+    "frame": {
+      "width": 1.28,
+      "height": 1.15
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-19",
+    "title": "Memory 19",
+    "caption": "Placeholder 19. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 19, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of glowing windows above a quiet street at dusk.",
+    "image": "/images/memories/memory-19.svg",
+    "position": [
+      -6.94,
+      4.11,
+      -5.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 19,
+    "frame": {
+      "width": 1.46,
+      "height": 1.02
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-20",
+    "title": "Memory 20",
+    "caption": "Placeholder 20. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 20, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of arches beside a moonlit courtyard.",
+    "image": "/images/memories/memory-20.svg",
+    "position": [
+      -6.94,
+      3.91,
+      -2.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 20,
+    "frame": {
+      "width": 1.18,
+      "height": 0.94
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-21",
+    "title": "Memory 21",
+    "caption": "Placeholder 21. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 21, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "A cypress and flowering plants in a sunlit garden. Vincent van Gogh.",
+    "image": "/images/memories/art-14586.webp",
+    "position": [
+      -6.94,
+      4.02,
+      -1.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 21,
+    "frame": {
+      "width": 1.46,
+      "height": 1.28
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-22",
+    "title": "Memory 22",
+    "caption": "Placeholder 22. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 22, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a small sailboat among curved bands of water.",
+    "image": "/images/memories/memory-22.svg",
+    "position": [
+      -6.94,
+      3.83,
+      1.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 22,
+    "frame": {
+      "width": 1.28,
+      "height": 1.15
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-23",
+    "title": "Memory 23",
+    "caption": "Placeholder 23. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 23, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a crescent moon above a dark horizon.",
+    "image": "/images/memories/memory-23.svg",
+    "position": [
+      -6.94,
+      4.11,
+      2.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 23,
+    "frame": {
+      "width": 1.46,
+      "height": 1.02
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-24",
+    "title": "Memory 24",
+    "caption": "Placeholder 24. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 24, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "A seated figure on the banks of the Seine. Claude Monet.",
+    "image": "/images/memories/art-81539.webp",
+    "position": [
+      -6.94,
+      3.91,
+      5.15
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 24,
+    "frame": {
+      "width": 1.18,
+      "height": 0.94
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-25",
+    "title": "Memory 25",
+    "caption": "Placeholder 25. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 25, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of arches beside a moonlit courtyard.",
+    "image": "/images/memories/memory-25.svg",
+    "position": [
+      -6.94,
+      4.02,
+      6.85
+    ],
+    "rotationY": 1.5707963267948966,
+    "displayOrder": 25,
+    "frame": {
+      "width": 1.46,
+      "height": 1.28
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-26",
+    "title": "Memory 26",
+    "caption": "Placeholder 26. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 26, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated still life of a vase holding pale branches and flowers.",
+    "image": "/images/memories/memory-26.svg",
+    "position": [
+      6.94,
+      3.83,
+      -6.85
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 26,
+    "frame": {
+      "width": 1.28,
+      "height": 1.15
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-27",
+    "title": "Memory 27",
+    "caption": "Placeholder 27. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 27, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of a small sailboat among curved bands of water.",
+    "image": "/images/memories/memory-27.svg",
+    "position": [
+      6.94,
+      4.11,
+      -5.15
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 27,
+    "frame": {
+      "width": 1.46,
+      "height": 1.02
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-28",
+    "title": "Memory 28",
+    "caption": "Placeholder 28. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 28, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of arches beside a moonlit courtyard.",
+    "image": "/images/memories/memory-15.svg",
+    "position": [
+      6.94,
+      3.91,
+      -2.85
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 28,
+    "frame": {
+      "width": 1.18,
+      "height": 0.94
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-29",
+    "title": "Memory 29",
+    "caption": "Placeholder 29. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 29, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of glowing windows above a quiet street at dusk.",
+    "image": "/images/memories/memory-29.svg",
+    "position": [
+      6.94,
+      4.02,
+      -1.15
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 29,
+    "frame": {
+      "width": 1.46,
+      "height": 1.28
+    },
+    "placeholder": true
+  },
+  {
+    "id": "memory-30",
+    "title": "Memory 30",
+    "caption": "Placeholder 30. Add your photograph and a few words about this moment.",
+    "story": "This is sample memory 30, ready for your own story. Replace the artwork and describe what you want to remember.\n\nNo real people, dates, or relationship events are represented by this sample.",
+    "alt": "Illustrated study of arches beside a moonlit courtyard.",
+    "image": "/images/memories/memory-30.svg",
+    "position": [
+      6.94,
+      3.83,
+      1.15
+    ],
+    "rotationY": -1.5707963267948966,
+    "displayOrder": 30,
+    "frame": {
+      "width": 1.28,
+      "height": 1.15
+    },
+    "placeholder": true
+  }
+]

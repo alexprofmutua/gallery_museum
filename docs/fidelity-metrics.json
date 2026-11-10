@@ -1,0 +1,603 @@
+{
+  "method": "Headless installed Chrome; no forced software-renderer flags; 1280x800 CSS pixels; device scale 1; Medium; stationary after 30 warmup frames, 180 rAF frame intervals per view. Renderer identity is read from WebGL. All render passes counted, including reflections and shadows. Texture byte estimates exclude render-target/driver allocations.",
+  "baseline": [
+    {
+      "name": "entrance",
+      "room": "entrance",
+      "pose": [
+        -6.185883055787045e-11,
+        1.648861575126648,
+        20
+      ],
+      "yaw": 0,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": false,
+      "frameMs": {
+        "mean": 16.653888888756434,
+        "median": 16.699999999999818,
+        "p95": 16.700000000000728,
+        "max": 16.800000000000182
+      },
+      "meanFps": 60.04603529420276,
+      "drawCalls": {
+        "min": 137,
+        "max": 138
+      },
+      "triangles": {
+        "min": 15944,
+        "max": 15946
+      },
+      "gpuResourceCounts": {
+        "geometries": 26,
+        "textures": 18
+      },
+      "sceneObjects": {
+        "meshes": 505,
+        "instanced": 12,
+        "materials": 380,
+        "geometries": 309,
+        "lights": 6,
+        "shadowLights": 0
+      },
+      "estimatedSceneTextureMiB": 57.9388427734375,
+      "geometryBufferMiB": 0.6721382141113281
+    },
+    {
+      "name": "gallery",
+      "room": "gallery",
+      "pose": [
+        -2.1734804533934948e-07,
+        1.6488620519638062,
+        -14.076871871948242
+      ],
+      "yaw": 1.5707963267948966,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": false,
+      "frameMs": {
+        "mean": 16.653333333333325,
+        "median": 16.69999999999709,
+        "p95": 16.799999999999272,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.048038430744626,
+      "drawCalls": {
+        "min": 43,
+        "max": 43
+      },
+      "triangles": {
+        "min": 41802,
+        "max": 41802
+      },
+      "gpuResourceCounts": {
+        "geometries": 279,
+        "textures": 127
+      },
+      "sceneObjects": {
+        "meshes": 585,
+        "instanced": 14,
+        "materials": 458,
+        "geometries": 385,
+        "lights": 13,
+        "shadowLights": 0
+      },
+      "estimatedSceneTextureMiB": 160.30928548177084,
+      "geometryBufferMiB": 3.1318435668945312
+    },
+    {
+      "name": "corridor",
+      "room": "corridor",
+      "pose": [
+        -4.7415909421033575e-08,
+        1.648861575126648,
+        -38.11762619018555
+      ],
+      "yaw": -1,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": false,
+      "frameMs": {
+        "mean": 16.65166666653422,
+        "median": 16.700000000000728,
+        "p95": 16.700000000004366,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.05404864425707,
+      "drawCalls": {
+        "min": 51,
+        "max": 51
+      },
+      "triangles": {
+        "min": 24044,
+        "max": 24044
+      },
+      "gpuResourceCounts": {
+        "geometries": 305,
+        "textures": 126
+      },
+      "sceneObjects": {
+        "meshes": 520,
+        "instanced": 18,
+        "materials": 403,
+        "geometries": 352,
+        "lights": 7,
+        "shadowLights": 0
+      },
+      "estimatedSceneTextureMiB": 107.06119791666664,
+      "geometryBufferMiB": 2.9797096252441406
+    },
+    {
+      "name": "cinema",
+      "room": "cinema",
+      "pose": [
+        2.6850753442886344e-07,
+        1.6488618731498719,
+        -78.11100006103516
+      ],
+      "yaw": 1.45,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": false,
+      "frameMs": {
+        "mean": 16.65333333306844,
+        "median": 16.69999999999709,
+        "p95": 16.700000000004366,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.048038431699744,
+      "drawCalls": {
+        "min": 32,
+        "max": 32
+      },
+      "triangles": {
+        "min": 89528,
+        "max": 89528
+      },
+      "gpuResourceCounts": {
+        "geometries": 102,
+        "textures": 48
+      },
+      "sceneObjects": {
+        "meshes": 235,
+        "instanced": 19,
+        "materials": 156,
+        "geometries": 124,
+        "lights": 4,
+        "shadowLights": 0
+      },
+      "estimatedSceneTextureMiB": 27.538085937500004,
+      "geometryBufferMiB": 2.601177215576172
+    },
+    {
+      "name": "forever",
+      "room": "forever",
+      "pose": [
+        3.9402061702276114e-07,
+        1.6488620519638062,
+        -95.88044738769531
+      ],
+      "yaw": 0,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": false,
+      "frameMs": {
+        "mean": 16.65777777764532,
+        "median": 16.69999999999709,
+        "p95": 16.700000000004366,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.032017076251094,
+      "drawCalls": {
+        "min": 39,
+        "max": 39
+      },
+      "triangles": {
+        "min": 78033,
+        "max": 78033
+      },
+      "gpuResourceCounts": {
+        "geometries": 45,
+        "textures": 31
+      },
+      "sceneObjects": {
+        "meshes": 165,
+        "instanced": 17,
+        "materials": 88,
+        "geometries": 58,
+        "lights": 7,
+        "shadowLights": 0
+      },
+      "estimatedSceneTextureMiB": 20.134440104166668,
+      "geometryBufferMiB": 0.17203521728515625
+    }
+  ],
+  "final": [
+    {
+      "name": "entrance",
+      "room": "entrance",
+      "pose": [
+        -7.572126259347556e-11,
+        1.648861575126648,
+        20
+      ],
+      "yaw": 0,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": true,
+      "frameMs": {
+        "mean": 16.642222222089767,
+        "median": 16.699999999999818,
+        "p95": 16.700000000000728,
+        "max": 16.800000000000182
+      },
+      "meanFps": 60.08812925672073,
+      "drawCalls": {
+        "min": 356,
+        "max": 356
+      },
+      "triangles": {
+        "min": 85483,
+        "max": 85483
+      },
+      "gpuResourceCounts": {
+        "geometries": 70,
+        "textures": 27
+      },
+      "sceneObjects": {
+        "meshes": 524,
+        "instanced": 10,
+        "materials": 380,
+        "geometries": 371,
+        "lights": 6,
+        "shadowLights": 1
+      },
+      "estimatedSceneTextureMiB": 76.42451985677084,
+      "geometryBufferMiB": 5.540916442871094
+    },
+    {
+      "name": "gallery",
+      "room": "gallery",
+      "pose": [
+        -1.59010852485153e-07,
+        1.6488619923591614,
+        -14.250648498535156
+      ],
+      "yaw": 1.5707963267948966,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": true,
+      "frameMs": {
+        "mean": 16.64555555555556,
+        "median": 16.69999999999891,
+        "p95": 16.799999999999272,
+        "max": 16.80000000000109
+      },
+      "meanFps": 60.076096388759076,
+      "drawCalls": {
+        "min": 180,
+        "max": 180
+      },
+      "triangles": {
+        "min": 211115,
+        "max": 211115
+      },
+      "gpuResourceCounts": {
+        "geometries": 345,
+        "textures": 137
+      },
+      "sceneObjects": {
+        "meshes": 605,
+        "instanced": 12,
+        "materials": 459,
+        "geometries": 450,
+        "lights": 13,
+        "shadowLights": 1
+      },
+      "estimatedSceneTextureMiB": 155.7572021484375,
+      "geometryBufferMiB": 13.106884002685547
+    },
+    {
+      "name": "gallery-high-2880x1620",
+      "room": "gallery",
+      "pose": [
+        -1.5904282690826221e-07,
+        1.6488619923591614,
+        -14.250648498535156
+      ],
+      "yaw": 0.3599999999999999,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1.5,
+      "drawingBuffer": [
+        2880,
+        1620
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": true,
+      "frameMs": {
+        "mean": 16.620555555290654,
+        "median": 16.700000000000728,
+        "p95": 16.799999999999272,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.166460541788574,
+      "drawCalls": {
+        "min": 445,
+        "max": 445
+      },
+      "triangles": {
+        "min": 314521,
+        "max": 314521
+      },
+      "gpuResourceCounts": {
+        "geometries": 345,
+        "textures": 137
+      },
+      "sceneObjects": {
+        "meshes": 605,
+        "instanced": 12,
+        "materials": 459,
+        "geometries": 450,
+        "lights": 13,
+        "shadowLights": 1
+      },
+      "estimatedSceneTextureMiB": 155.7572021484375,
+      "geometryBufferMiB": 13.154491424560547
+    },
+    {
+      "name": "corridor",
+      "room": "corridor",
+      "pose": [
+        -3.0524915928253904e-07,
+        1.648861575126648,
+        -38.22465515136719
+      ],
+      "yaw": -1,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": true,
+      "frameMs": {
+        "mean": 16.65222222208977,
+        "median": 16.69999999999709,
+        "p95": 16.799999999995634,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.05204510623599,
+      "drawCalls": {
+        "min": 95,
+        "max": 95
+      },
+      "triangles": {
+        "min": 186006,
+        "max": 186006
+      },
+      "gpuResourceCounts": {
+        "geometries": 380,
+        "textures": 137
+      },
+      "sceneObjects": {
+        "meshes": 538,
+        "instanced": 14,
+        "materials": 402,
+        "geometries": 401,
+        "lights": 7,
+        "shadowLights": 1
+      },
+      "estimatedSceneTextureMiB": 128.87760416666663,
+      "geometryBufferMiB": 13.059440612792969
+    },
+    {
+      "name": "cinema",
+      "room": "cinema",
+      "pose": [
+        -4.3487651169016317e-07,
+        1.648862111568451,
+        -78.15552520751953
+      ],
+      "yaw": 1.45,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": true,
+      "frameMs": {
+        "mean": 16.653333332935976,
+        "median": 16.69999999999709,
+        "p95": 16.799999999995634,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.04803843217738,
+      "drawCalls": {
+        "min": 77,
+        "max": 77
+      },
+      "triangles": {
+        "min": 405386,
+        "max": 405386
+      },
+      "gpuResourceCounts": {
+        "geometries": 182,
+        "textures": 53
+      },
+      "sceneObjects": {
+        "meshes": 236,
+        "instanced": 13,
+        "materials": 157,
+        "geometries": 160,
+        "lights": 4,
+        "shadowLights": 1
+      },
+      "estimatedSceneTextureMiB": 39.84016927083332,
+      "geometryBufferMiB": 11.909931182861328
+    },
+    {
+      "name": "forever",
+      "room": "forever",
+      "pose": [
+        -4.4250157316128025e-07,
+        1.6488618731498719,
+        -95.98408508300781
+      ],
+      "yaw": 0,
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "pixelRatio": 1,
+      "drawingBuffer": [
+        1280,
+        800
+      ],
+      "toneMapping": 4,
+      "exposure": 1,
+      "outputColorSpace": "srgb",
+      "environment": true,
+      "frameMs": {
+        "mean": 16.652222221824843,
+        "median": 16.69999999999709,
+        "p95": 16.700000000004366,
+        "max": 16.80000000000291
+      },
+      "meanFps": 60.05204510719137,
+      "drawCalls": {
+        "min": 70,
+        "max": 70
+      },
+      "triangles": {
+        "min": 328309,
+        "max": 328309
+      },
+      "gpuResourceCounts": {
+        "geometries": 121,
+        "textures": 33
+      },
+      "sceneObjects": {
+        "meshes": 165,
+        "instanced": 11,
+        "materials": 88,
+        "geometries": 91,
+        "lights": 7,
+        "shadowLights": 1
+      },
+      "estimatedSceneTextureMiB": 20.134440104166668,
+      "geometryBufferMiB": 4.3745269775390625
+    }
+  ],
+  "walks": [
+    {
+      "destinationZ": -14,
+      "frames": 517,
+      "meanMs": 17.75125725343102,
+      "p95Ms": 16.799999999999272,
+      "maxMs": 350,
+      "framesOver33ms": 4
+    },
+    {
+      "destinationZ": -38,
+      "frames": 377,
+      "meanMs": 17.088859416319142,
+      "p95Ms": 16.799999999999272,
+      "maxMs": 133.29999999999927,
+      "framesOver33ms": 2
+    },
+    {
+      "destinationZ": -78,
+      "frames": 618,
+      "meanMs": 17.1163430420712,
+      "p95Ms": 16.700000000004366,
+      "maxMs": 283.3000000000029,
+      "framesOver33ms": 1
+    },
+    {
+      "destinationZ": -95.8,
+      "frames": 293,
+      "meanMs": 16.65153583617748,
+      "p95Ms": 16.700000000004366,
+      "maxMs": 16.80000000000291,
+      "framesOver33ms": 0
+    },
+    {
+      "destinationZ": 20,
+      "frames": 1745,
+      "meanMs": 17.060802292249946,
+      "p95Ms": 16.79999999998836,
+      "maxMs": 200,
+      "framesOver33ms": 7
+    }
+  ],
+  "startupMs": 1531,
+  "errors": [],
+  "letterOpened": true,
+  "returnTripRoom": "entrance"
+}

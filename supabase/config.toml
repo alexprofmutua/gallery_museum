@@ -1,0 +1,5 @@
+project_id = "our-forever-museum"
+
+[functions.museum-access]
+# The function validates the bearer with Auth before it grants access.
+verify_jwt = false
