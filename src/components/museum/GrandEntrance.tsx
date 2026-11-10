@@ -106,6 +106,10 @@ export function GrandEntrance() {
   return (
     <>
       <EntranceMemory />
+      {/* Central ceremonial floor inlay draws the eye toward the first gallery. */}
+      {[-1.65, 1.65].map((x) => (
+        <Box key={x} position={[x, 0.012, 17.15]} size={[0.025, 0.018, 9.8]} color="#b8935c" metalness={0.5} />
+      ))}
       <FloorContactShadows contacts={urnContacts} />
       <Box
         position={[0, 6.45, 10.34]}
@@ -215,7 +219,7 @@ export function GrandEntrance() {
           />
           <mesh position={[0, 1.41, 0]} geometry={urn}>
             <meshPhysicalMaterial
-              color="#365656"
+              color="#254e50"
               roughness={0.27}
               metalness={0.06}
               clearcoat={0.65}
@@ -225,7 +229,7 @@ export function GrandEntrance() {
           <mesh position={[0, 2.315, 0]} rotation={[Math.PI / 2, 0, 0]}>
             <torusGeometry args={[0.296, 0.017, 8, 32]} />
             <meshStandardMaterial
-              color="#b68c57"
+              color="#d2a66e"
               metalness={0.55}
               roughness={0.34}
             />
